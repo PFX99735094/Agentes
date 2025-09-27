@@ -6,6 +6,8 @@ import os
 
 # --- 1. Carregar variáveis de ambiente ---
 load_dotenv()
+#os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+api_key = os.getenv("OPENAI_API_KEY")
 
 # Inicializar LLM
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.7)
